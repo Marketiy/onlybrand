@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <div class="screen" data-name="Выбор категорий">
+    <header class="navigation" data-name="Navigation">
+      <a href="index.html" class="nav-back" type="button" aria-label="Назад">
+        <span class="nav-back-icon"></span>
+      </a>
+    </header>
+
+    <main class="screen-content">
+      <section class="section section-header" data-name="Section Header">
+        <h1 class="headline3">
+          Выберите категории на&nbsp;октябрь
+        </h1>
+        <p class="footnote1 text-secondary">
+          Выбранные категории будут действовать до конца месяца
+        </p>
+      </section>
+
+      <section class="section section-ai" data-name="Section AI">
+        <div class="card-ai" data-name="GigaChat">
+          <div class="card-ai-text" data-name="Text">
+            <div class="card-ai-icon" data-name="Icon">
+              <img src="./assets/img/icon-gigachat.svg" alt="" />
+            </div>
+            <p class="body2 text-primary">
+              Помогу подобрать категории кешбэка под ваши траты в октябре
+            </p>
+          </div>
+          <button class="card-ai-close" type="button" aria-label="Закрыть подсказку" data-name="Icon Close">
+            <img src="./assets/img/icon-gigachat-close.svg" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <section class="section module" data-name="Section Module Bank">
+        <div class="module-container">
+          <header class="module-header" data-name="Cell Header">
+            <p class="title3 text-primary">
+              Выберите до 3 категорий
+            </p>
+          </header>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-health">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/SEGMENTS_LOY_HEALTH.png" alt="Медицинские услуги" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  2% Медицинские услуги
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button info-button--ghost" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-supermarket">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/SEGMENTS_LOY_SUPERMARKET.png" alt="Супермаркеты" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  2% Супермаркеты
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button info-button--ghost" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-greenday">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/SEGMENTS_LOY_GREENDAY.png" alt="Кешбэк дня" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  До 100% кешбэк дня
+                </p>
+                <p class="caption text-secondary">
+                  Новая категория каждый день
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-clothes">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/SEGMENTS_LOY_CLOTHES.png" alt="Одежда и обувь" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  3% Одежда и обувь
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-azs">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/SEGMENTS_LOY_AZS.png" alt="АЗС" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  5% АЗС
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-beauty">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/SEGMENTS_LOY_BEAUTY.png" alt="Салоны красоты" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  8% Салоны красоты
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-taxi">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/SEGMENTS_LOY_TAXI.png" alt="Такси и каршеринг" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  5% Такси и каршеринг
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-zoo">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/SEGMENTS_LOY_ZOO.png" alt="Питомцы" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  4% Питомцы
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section module" data-name="Section Module Brand">
+        <div class="module-container">
+          <header class="module-header" data-name="Cell Header">
+            <p class="title3 text-primary">
+              Выберите до 5 категорий
+            </p>
+          </header>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-gazpromneft">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/PARTNER_LOY_2.png" alt="Газпромнефть" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  7% Газпромнефть
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-rivgosh">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/PARTNER_LOY_RIVGOSH.png" alt="РИВ ГОШ" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  15% РИВ ГОШ
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-burger-king">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/PARTNER_LOY_BURGER_KING.png" alt="Бургер Кинг" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  10% Бургер Кинг
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-sela">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/PARTNER_LOY_SELA.png" alt="SELA" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  20% SELA
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории"></button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+
+          <article class="cell-category" data-name="Cell Category" data-help-id="help-kari">
+            <div class="cell-left" data-name="Left">
+              <div class="cell-icon" data-name="Icon Container">
+                <img src="./assets/img/PARTNER_LOY_KARIN.png" alt="KARI" />
+              </div>
+              <div class="cell-text" data-name="Text">
+                <p class="body1 text-primary">
+                  5% KARI
+                </p>
+              </div>
+            </div>
+            <div class="cell-right" data-name="Right">
+              <button class="info-button" type="button" aria-label="Информация о категории">
+                <img src="./assets/img/Info_content.svg" alt="" />
+              </button>
+              <div class="checkbox" aria-hidden="true"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <section class="section section-button" data-name="Section Button">
+      <div class="section-button-inner" data-name="Button">
+        <a href="status.html" class="mobile-button" data-name="Mobile_button" aria-disabled="true">
+          <p class="special-body text-secondary">
+            Выбрано 0
+          </p>
+          <div class="mobile-button-icons" data-name="All Icon"></div>
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <div class="bottom-sheet" id="ghost-sheet" aria-hidden="true">
+    <div class="bottom-sheet__backdrop"></div>
+    <div class="bottom-sheet__panel" role="dialog" aria-modal="true">
+      <div class="bottom-sheet__handle"></div>
+
+      <div class="bottom-sheet__content bottom-sheet__content--active" id="help-health">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_SEGMENTS_LOY_HEALTH.png" alt="Медицинские услуги" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">2% Медицинские услуги</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Медицинские услуги».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-supermarket">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_SEGMENTS_LOY_SUPERMARKET.png" alt="Супермаркеты" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">2% Супермаркеты</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Супермаркеты».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-greenday">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_SEGMENTS_LOY_GREENDAY.png" alt="Кешбэк дня" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">До 100% кешбэк дня</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Кешбэк дня».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-clothes">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_SEGMENTS_LOY_CLOTHES.png" alt="Одежда и обувь" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">3% Одежда и обувь</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Одежда и обувь».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-azs">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_SEGMENTS_LOY_AZS.png" alt="АЗС" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">5% АЗС</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «АЗС».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-beauty">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_SEGMENTS_LOY_BEAUTY.png" alt="Салоны красоты" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">8% Салоны красоты</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Салоны красоты».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-taxi">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_SEGMENTS_LOY_TAXI.png" alt="Такси и каршеринг" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">5% Такси и каршеринг</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Такси и каршеринг».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-zoo">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_SEGMENTS_LOY_ZOO.png" alt="Питомцы" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">4% Питомцы</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Питомцы».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-gazpromneft">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_PARTNER_LOY_2.png" alt="Газпромнефть" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">7% Газпромнефть</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Газпромнефть».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-rivgosh">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_PARTNER_LOY_RIVGOSH.png" alt="РИВ ГОШ" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">15% РИВ ГОШ</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «РИВ ГОШ».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-burger-king">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_PARTNER_LOY_BURGER_KING.png" alt="Бургер Кинг" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">10% Бургер Кинг</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «Бургер Кинг».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-sela">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_PARTNER_LOY_SELA.png" alt="SELA" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">20% SELA</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «SELA».</p>
+        </div>
+      </div>
+
+      <div class="bottom-sheet__content" id="help-kari">
+        <div class="bottom-sheet__content-inner">
+          <div class="bottom-sheet__icon" data-name="Icon Bottom Sheet">
+            <img src="./assets/img/SHEET_PARTNER_LOY_KARIN.png" alt="KARI" />
+          </div>
+          <h2 class="bottom-sheet__title headline3 text-primary">5% KARI</h2>
+          <p class="bottom-sheet__text footnote1 text-secondary">Описание для категории «KARI».</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/libs/jquery/jquery.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

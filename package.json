@@ -1,0 +1,12 @@
+{
+  "name": "spasibo-static-site",
+  "version": "1.0.0",
+  "description": "Базовая структура статического сайта на HTML/CSS/JS с локальной jQuery и шрифтами.",
+  "private": true,
+  "scripts": {
+    "start": "echo \"Откройте index.html в браузере\""
+  },
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}

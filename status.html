@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статус подключения</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="preload" href="./assets/img/BG.png" as="image">
+</head>
+<body class="status-page">
+  <main class="status-page__inner" data-name="Status Screen">
+    <section class="status-card" data-name="Status Card">
+      <div class="status-card__icon">
+        <img src="./assets/img/iconok.png" alt="Категории подключены" />
+      </div>
+      <h1 class="status-card__title title1 text-primary">
+        Категории подключены
+      </h1>
+      <p class="status-card__subtitle body1">
+        Они будут активны через 15 минут, а после за покупки можно получать бонусы
+      </p>
+      <a href="index2.html" class="button-primary status-card__button body-semibold" type="button">
+        В раздел СберСпасибо
+      </a>
+    </section>
+
+    <section class="status-rating" data-name="Status Rating">
+      <header class="status-rating__header">
+        <p class="status-rating__title body1 text-primary">
+          Оцените подключение категорий
+        </p>
+        <button class="status-rating__close" type="button" aria-label="Закрыть оценку" data-name="Icon Close">
+          <img src="./assets/img/icon-gigachat-close.svg" alt="" />
+        </button>
+      </header>
+      <div class="status-rating__stars" aria-label="Оценка по пятибалльной шкале">
+        <img src="./assets/img/rating.png" alt="Рейтинг подключённых категорий" />
+      </div>
+    </section>
+  </main>
+
+  <script src="./assets/libs/jquery/jquery.min.js"></script>
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
