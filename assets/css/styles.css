@@ -549,7 +549,6 @@ button {
 
 .bottom-sheet__content-inner {
   display: flex;
-  padding: 16px;
   padding-top: 0px !important;
   flex-direction: column;
   justify-content: center;
@@ -595,6 +594,35 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.bottom-sheet__icon {
+  width: 100%;
+  height: 177px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.bottom-sheet__dvider {
+  width: 100%;
+  display: block;
+  height: 1px;
+  background-color: #000000;
+  opacity: 12%;
+  margin: 12px 0px;
+}
+
+.bottom-sheet__contenttext {
+  display: flex;
+  padding: 6px 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  align-self: stretch;
+}
+
+.bottom-sheet__contenttext h3, p {
+  margin: 0;
 }
 
 .bottom-sheet--open {
