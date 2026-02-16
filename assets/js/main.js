@@ -511,17 +511,6 @@ document.addEventListener('DOMContentLoaded', function () {
         if (selectionOrder.indexOf(cell) === -1) {
           selectionOrder.push(cell);
         }
-
-        // Если выбрана категория из блока Section Module Brand — шлём цель в Яндекс.Метрику
-        var inBrandModule =
-          cell.closest('[data-name=\"Section Module Brand\"]') !== null;
-        if (inBrandModule && typeof ym === 'function') {
-          try {
-            ym(106845526, 'reachGoal', 'choose_brand');
-          } catch (e) {
-            // безопасно игнорируем ошибки Метрики
-          }
-        }
       } else {
         // удаляем из порядка
         var idx = selectionOrder.indexOf(cell);
@@ -595,6 +584,36 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!mobileButton.classList.contains('mobile-button--primary')) {
         evt.preventDefault();
         return;
+      }
+
+    // Если есть выбранные категории брендов (Section Module Brand),
+    // отправляем цели Яндекс.Метрики при переходе на следующий экран.
+      var brandSection = document.querySelector(
+        '[data-name="Section Module Brand"]'
+      );
+      if (brandSection) {
+      var brandCells = brandSection.querySelectorAll('.cell-category');
+      var activeBrands = brandSection.querySelectorAll(
+        '.cell-category.cell-category--active'
+      );
+
+      if (activeBrands.length > 0 && typeof ym === 'function') {
+        try {
+          // Есть хотя бы одна выбранная брендовая категория
+          console.log('[ym] goal: choose_brand');
+          ym(106845526, 'reachGoal', 'choose_brand');
+
+          // Если выбраны все бренды в этом блоке — отправляем дополнительную цель
+          if (brandCells.length > 0 &&
+              activeBrands.length === brandCells.length) {
+            console.log('[ym] goal: choose_all_brand');
+            ym(106845526, 'reachGoal', 'choose_all_brand');
+          }
+        } catch (e) {
+          // безопасно игнорируем ошибки Метрики
+          console.warn('YM goal send error', e);
+        }
+      }
       }
 
       // Сохраняем выбранные категории и даём ссылке перейти на status.html
