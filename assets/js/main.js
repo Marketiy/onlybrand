@@ -511,6 +511,17 @@ document.addEventListener('DOMContentLoaded', function () {
         if (selectionOrder.indexOf(cell) === -1) {
           selectionOrder.push(cell);
         }
+
+        // Если выбрана категория из блока Section Module Brand — шлём цель в Яндекс.Метрику
+        var inBrandModule =
+          cell.closest('[data-name=\"Section Module Brand\"]') !== null;
+        if (inBrandModule && typeof ym === 'function') {
+          try {
+            ym(106845526, 'reachGoal', 'choose_brand');
+          } catch (e) {
+            // безопасно игнорируем ошибки Метрики
+          }
+        }
       } else {
         // удаляем из порядка
         var idx = selectionOrder.indexOf(cell);
@@ -630,3 +641,4 @@ document.addEventListener('DOMContentLoaded', function () {
     updateNavState();
   })();
 });
+
